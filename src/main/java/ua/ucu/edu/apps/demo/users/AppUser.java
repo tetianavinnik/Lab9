@@ -18,7 +18,6 @@ public class AppUser {
     private LocalDate dob;
     @Transient
     private int age;
-    @Transient
     private String status;
 
     public int getAge() {

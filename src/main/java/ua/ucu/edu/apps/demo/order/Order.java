@@ -2,7 +2,6 @@ package ua.ucu.edu.apps.demo.order;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import ua.ucu.edu.apps.demo.delivery.Delivery;
 import ua.ucu.edu.apps.demo.payment.Payment;
 import ua.ucu.edu.apps.demo.users.AppUser;
@@ -63,7 +62,7 @@ public class Order {
     }
 
     public void notifyUsers() {
-        for(AppUser appUser:users) {
+        for (AppUser appUser:users) {
             appUser.update("received");
         }
     }
