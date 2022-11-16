@@ -18,8 +18,14 @@ public class AppUser {
     private LocalDate dob;
     @Transient
     private int age;
+    @Transient
+    private String status;
 
     public int getAge() {
         return Period.between(dob, LocalDate.now()).getYears();
+    }
+
+    public void update(String status) {
+        this.status = status;
     }
 }
