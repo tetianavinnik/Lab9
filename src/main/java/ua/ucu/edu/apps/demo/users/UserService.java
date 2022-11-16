@@ -1,4 +1,4 @@
-package ua.ucu.edu.apps.demo.Users;
+package ua.ucu.edu.apps.demo.users;
 
 import org.springframework.stereotype.Service;
 
@@ -18,7 +18,8 @@ public class UserService {
     }
 
     public void addUser(AppUser appUser) {
-        if (!userRepository.findAppUserByEmail(appUser.getEmail()).isPresent()) {
+        if (!userRepository.findAppUserByEmail(appUser.getEmail()).
+                isPresent()) {
             userRepository.save(appUser);
         }
     }

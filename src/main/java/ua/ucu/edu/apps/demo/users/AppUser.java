@@ -1,4 +1,4 @@
-package ua.ucu.edu.apps.demo.Users;
+package ua.ucu.edu.apps.demo.users;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

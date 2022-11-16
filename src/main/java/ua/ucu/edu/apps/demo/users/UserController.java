@@ -1,7 +1,6 @@
-package ua.ucu.edu.apps.demo.Users;
+package ua.ucu.edu.apps.demo.users;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
